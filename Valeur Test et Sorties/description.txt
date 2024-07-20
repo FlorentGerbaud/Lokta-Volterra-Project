@@ -1,0 +1,61 @@
+#1 (RK4) 
+a = 4/3
+b = 2/3
+c = 0.2
+d = 0.1
+h = 0.1
+u = np.array([4,2])
+
+avec une population initiale adéquate, et desparamtres adapté, on parvient a obtenir une reproduction cyclique 
+dans le temps
+
+#2 (RK4)
+a = 4/3
+b = 2/3
+c = 0.2
+d = 0.1
+h = 0.1
+u = np.array([4,8])
+
+si l'on met trop de loup, on constate de mançère naturelle que le nombre de lapin est souvent assez bas,
+la population de loups elle est bien évidemment plus haute [en reva,che incohérence du modèle avec un repique des lapins]
+
+#3 (RK4)
+
+a = 4/3
+b = 2/3
+c = 0.2
+d = 0.1
+h = 0.1
+u = np.array([20,2])
+
+En faisant l'inverse et en mettant beaucoup de lapin, on remarque que les 2 populations augentent vite, ce qui provoque 
+le fait que les loups mangent tous les lapins et ce qui explique qu'après avoir atteint le pique de population, les lapins se fassent exterminer
+
+#4 (Euler) 
+Pour les meme conditions initiales que (1)
+on remarque que la méthode de euler implicite nous donne toujours un résultat periodique mais décroissant
+Euler => une décroissance, probablement du a l'erreur numpérique de Euler + de la méthode de Newton
+
+#5 (Euler)
+a = 4/3
+b = 2
+c = 0.2
+d = 0.1
+h = 0.1
+Nmax = 1000
+u = np.array([4,2])
+
+on modifie b le taux de mortalité des lapin qui influe par rapport au taux de mportalité de l'espece mais églement par la quantité de lapin que mange les loups. On remarque bien sur le graphe que les loups augment fortmement, ont toujours une population plus haute que celle des lapins et que les lapins ont tendance a etre bas et a toujours se faire domineer
+
+#6 (Euler)
+a = 4/3
+b = 2/3
+c = 2
+d = 0.1
+h = 0.1
+Nmax = 1000
+u = np.array([6,2])
+
+#l'objectif ici est de montrer le problème de ce modèle
+j'ai voulu mettre en évidence un problème du modèle en mettant plus de lapin, et un taux de natalité plus fort chez les loups, et on constate que malgré le fait qu'il n'y est plus de lapin, les loups continuent a se repoduire de manière exponentielle
