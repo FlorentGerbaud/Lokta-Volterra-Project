@@ -54,11 +54,11 @@ xSol=[]
 ySol=[]
 zSol=[]
 t=0
-tf=2000
+tf=200
 
 
 # ______________________________ CHOIX ESPECES _____________________________
-choixSysEspece=2 #si 2 alors LV2 si 3 LV3
+choixSysEspece=3 #si 2 alors LV2 si 3 LV3
 # __________________________________________________________________________
 
 
